@@ -1,10 +1,16 @@
 body {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', Arial, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', Arial, sans-serif !important;
     background-image: url("images/table.png");
-    background-size: cover;
-    font-weight: bold;
-    color: white;
-    text-align: center;
+    background-size: cover !important;
+    font-weight: bold !important;
+    color: white !important;
+    text-align: center !important;
+    height: 100vh;
+    display: flex;
+}
+
+.container {
+    margin: auto;
 }
 
 h1 {

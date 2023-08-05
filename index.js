@@ -12,6 +12,7 @@ let messageEl = document.getElementById("message-el")
 let sumEl = document.getElementById("sum-el")
 let cardsEl = document.getElementById("cards-el")
 let playerEl = document.getElementById("player-el")
+let startBtn = document.getElementById("start-btn")
 
 playerEl.textContent = player.name + ": $" + player.chips
 
@@ -44,12 +45,15 @@ function renderGame() {
     sumEl.textContent = "Sum: " + sum
     if (sum <= 20) {
         message = "Do you want to draw a new card?"
+        startBtn.textContent = "START GAME"
     } else if (sum === 21) {
         message = "You've got Blackjack!"
         hasBlackJack = true
+        startBtn.textContent = "RESTART GAME"
     } else {
         message = "You're out of the game!"
         isAlive = false
+        startBtn.textContent = "RESTART GAME"
     }
     messageEl.textContent = message
 }
